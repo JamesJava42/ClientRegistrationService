@@ -22,6 +22,7 @@ public class Userdetailservice implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		
 		log.info("Entering the USer detail class"+username);
 		User users = userrepo.getUser(username);
 		

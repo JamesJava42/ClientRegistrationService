@@ -15,6 +15,7 @@ import com.client.service.model.User;
 public class Myuserdetails implements UserDetails {
 
 	static User user;
+	
 	public Myuserdetails(User name) {
 		this.user=name;
 		// TODO Auto-generated constructor stub

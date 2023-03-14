@@ -47,10 +47,11 @@ public class Securityconfig {
 	@Primary
     @Bean
     public AuthenticationManagerBuilder authBuilder(AuthenticationManagerBuilder authBuilder) {
-		System.out.println("ntered to the authbuilder :");
+		
 
     	return authBuilder.authenticationProvider(authProvider());
     }
+	
 	@Bean
 	public DaoAuthenticationProvider authProvider() {
 		System.out.println("ntered to the authprovider :");
@@ -60,6 +61,8 @@ public class Securityconfig {
 	       authenticationProvider.setPasswordEncoder(passwordEncoder());
 	       return authenticationProvider;
 	}
+	
+	
     
    
     @Bean
